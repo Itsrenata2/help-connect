@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/login.css">
+        <title>Login - HelpConnect</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="btn-voltar" aria-label="Voltar">
+                <img src="./assets/images/arrow.svg" alt="Seta para voltar">
+            </a>
+            <p id="login">login</p>
+        </header>
+        <main>
+            <img src="./assets/images/logo.svg" alt="Logo da HelpConnect" id="logo">
+            <section class="form-login">
+                <form action="#" id="login">
+                    <div id="login-inputs">
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o email desejado" required>
+                        <label for="senha">Senha *</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div id="sobre-senha">
+                        <div id="lembrar-senha">
+                            <input type="checkbox" name="lembrar" id="lembrar">
+                            <p>Lembrar de mim</p>
+                        </div>
+                        <a href="#" class="recuperar-senha">Esqueceu a senha?</a>
+                    </div>
+                    <div class="button">
+                        <button type="submit" onclick="verificarUsuario(event)">Cadastre-se</button>
+                    </div>
+                    <div id="criar-conta">
+                        <p>Não tem uma conta?</p>
+                        <a href="cadastro.html">Crie agora.</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>

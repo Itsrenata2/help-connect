@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/cadastro.css">
+        <title>HelpConnect - Cadastro</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="btn-voltar" aria-label="Voltar">
+                <img src="./assets/images/arrow.svg" alt="Seta para voltar">
+            </a>
+            <p id="cadastro">cadastro</p>
+        </header>
+        <main>
+            <!-- Abas de cadastro para ongs e empresas -->
+            <div class="abas-nav">
+                <button class="aba empresa active" id="default" onclick="mudarAba(event, 'empresas')">EMPRESA</button>
+                <button class="aba ongs" onclick="mudarAba(event, 'ongs')">ONGs</button>
+            </div>
+            <!-- Formulários de cadastro -->
+            <div class="formularios">
+                <!-- Cadastro de empresa -->
+                <form id="empresas" class="aba-conteudo">
+                    <div class="cadastro-form">
+                        <label for="nome-empresa">Empresa *</label>
+                        <input type="text" name="nome-empresa" id="nome-empresa" placeholder="Digite o nome da empresa" required>
+                        <label for="cnpj">CNPJ *</label>
+                        <input type="text" name="cnpj" id="cnpj" placeholder="Digite o CNPJ da empresa" required>
+                        <label for="email-empresa">Email *</label>
+                        <input type="email" name="email-empresa" id="email-empresa" placeholder="Digite o email desejado" required>
+                        <label for="confirmar-email-empresa">Confirmar email *</label>
+                        <input type="email" name="confirmar-email-empresa" id="confirmar-email-empresa" placeholder="Confirme o email" required>
+                        <label for="senha-empresa">Senha *</label>
+                        <input type="password" name="senha-empresa" id="senha-empresa" placeholder="Crie uma senha" required>
+                        <label for="confirmar-senha-empresa">Confirmar senha *</label>
+                        <input type="password" name="confirmar-senha-empresa" id="confirmar-senha-empresa" placeholder="Confirme a senha" required>
+                    </div>
+                    <div class="contrato">
+                        <div>
+                            <input type="checkbox" name="termos-empresa" id="termos-empresa" required>
+                            <p class="aceitar-termos">Aceito os <a href="#">termos e condições</a> da HelpConnect. *</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="atualizacoes-empresa" id="atualizacoes-empresa">
+                            <p class="receber-atualizacoes">Quero receber notificações de atualizações.</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Cadastre-se" onclick="redirecionarEmpresa(event)">
+                        <p>Já possui conta? <a href="login.html">Entrar.</a></p>
+                    </div>
+                </form>
+                <!-- Cadastro ONGs -->
+                <form action="#" id="ongs" class="aba-conteudo">
+                    <div class="cadastro-form">
+                        <label for="nome-ong">ONG *</label>
+                        <input type="text" name="nome-ong" id="nome-ong" placeholder="Digite o nome da ONG que você representa" required>
+                        <label for="email-ong">Email *</label>
+                        <input type="email" name="email-ong" id="email-ong" placeholder="Digite o email desejado" required>
+                        <label for="confirmar-email-ong">Confirmar email *</label>
+                        <input type="email" name="confirmar-email-ong" id="confirmar-email-ong" placeholder="Confirme o email" required>
+                        <label for="senha-ong">Senha *</label>
+                        <input type="password" name="senha-ong" id="senha-ong" placeholder="Crie uma senha" required>
+                        <label for="confirmar-senha-ong">Confirmar senha *</label>
+                        <input type="password" name="confirmar-senha-ong" id="confirmar-senha-ong" placeholder="Confirme a senha" required>
+                        <p id="endereco">endereço</p>
+                        <label for="cep">CEP *</label>
+                        <input type="text" name="cep" id="cep" placeholder="Digite o CEP da ONG" required value="" size="10" maxlength="9" onblur="pesquisacep(this.value);">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro"> 
+                        <label for="numero">Número</label>
+                        <input type="text" name="numero" id="numero">
+                    </div>
+                    <div class="contrato">
+                        <div>
+                            <input type="checkbox" name="termos-ong" id="termos-ong" required>
+                            <p class="aceitar-termos">Aceito os <a href="#">termos e condições</a> da HelpConnect. *</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="atualizacoes-ong" id="atualizacoes-ong">
+                            <p class="receber-atualizacoes">Quero receber notificações de atualizações.</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Cadastre-se" onclick="redirecionarOng(event)">
+                        <p>Já possui conta? <a href="login.html">Entrar.</a></p>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>

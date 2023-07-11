@@ -1,0 +1,198 @@
+/* Links das fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* Estilização geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin';
+}
+
+/* Estlização header */
+
+header {
+    background-color:#C39E5C;
+    color: #FFFFFF;
+    display: flex;
+    width: 100%;
+    padding: 14px 0;
+    gap: 24px;
+    align-items: center;
+    border-radius: 0px 0px 25px 0px;
+}
+
+.btn-voltar {
+    background-color: transparent;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+header p {
+    font-size: 12px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilização abas dos formulários */
+
+.abas-nav {
+    display: flex;
+    overflow: hidden;
+    margin-top: 48px;
+    margin-bottom: 43px;
+    justify-content: center;
+}
+
+.abas-nav button {
+    background-color: #292929;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.aba.empresa {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.aba.ongs {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.abas-nav button:not(.active):hover {
+    background-color: #575757;
+}
+
+button.active {
+    background-color:#C39E5C;
+}
+
+.aba-conteudo {
+    display: none;
+    width: 100%;
+    margin: 0 16px;
+}
+
+/* Estilização dos formulários */
+
+.formularios {
+    display: flex;
+    font-size: 14px;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-form label {
+    font-weight: 700;
+    padding: 24px 0 14px;
+}
+
+#endereco {
+    margin-top: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cadastro-form input {
+    border-bottom: 1px solid #888888;
+    padding-bottom: 6px;
+}
+
+.cadastro-form input:focus{
+    outline: none;
+    border-bottom: 1px solid #C39E5C;
+}
+
+.contrato {
+    display: flex;
+    flex-direction: column;
+    margin: 31px 0 40px;
+    gap: 14px;
+}
+
+.contrato div {
+    display: flex;
+    gap: 8px;
+}
+
+.contrato div input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    border: 1px solid #C39E5C;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.contrato div input[type="checkbox"]:checked {
+    background-color: #C39E5C;
+}
+
+.contrato a {
+    text-decoration: none;
+    color: #C39E5C;
+    font-weight: 500;
+}
+
+.contrato a:hover {
+    color: #dbb779;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.button p {
+    font-size: 15px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #a07d41;
+    font-weight: bold;
+}
+
+form input[type="submit"] {
+    width: 240px;
+    height: 40px;
+    background-color: #C39E5C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #dbb779;
+}
+
+/* Media query */
+
+@media only screen and (min-width: 600px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .formularios {
+        width: 70%;
+    }
+}

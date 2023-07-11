@@ -1,0 +1,91 @@
+#barra-nav-desktop {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    list-style-type: none;
+    margin-top: 4.3rem;
+    margin-left: 14.7rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    text-align: right;
+    line-height: 200%;
+    background-color: var(--cor-preta);
+    color: var(--cor-principal);
+    font-size: 0.8rem;
+}
+
+#barra-nav-desktop a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-family: var(--fonte-texto);
+}
+
+#barra-nav-desktop a:hover {
+    color: var(--cor-destaque);
+}
+
+#btn-menu {
+    cursor: pointer;
+}
+
+/* Optional styling for the active menu item */
+#barra-nav-desktop li.active {
+    background-color: #ccc;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 30rem;
+    }
+    
+    #logo-helpconnect {
+        width: 5%;
+        margin: 1.5rem 0 0 1.5rem;
+    }
+    
+    #barra-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    #barra-nav-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+        width: 70%;
+        margin-top: 1.5rem;
+        margin-left: 10rem;
+        color: var(--cor-principal);
+        background-color: transparent;
+    }
+
+    #barra-nav-desktop li:hover {
+        background-color: none;
+    }
+
+    .nav-lista:hover {
+        color: var(--cor-destaque);
+    }
+
+    a {
+        color: var(--cor-principal);
+        text-decoration: none;
+        font-family: var(--fonte-texto);
+        font-size: 1.2rem;
+    }
+    
+    #botoes-nav {
+        display: block;
+    }
+    
+    #btn-pesquisa {
+        width: 60%;
+        margin: 2rem 3rem 0 0;
+    }
+    
+    #btn-menu {
+        display: none;
+        width: 40%;
+        margin: 1.5rem 2rem 0 0;
+    }
+}

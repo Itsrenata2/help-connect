@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/pag-usuario.css">
+        <title>Página do usuário</title>
+    </head>
+    <body>
+        <header>
+            <nav id="barra-nav">
+                <img src="./assets/images/logo.svg" id="logo">
+                <ul id="barra-nav-desktop">
+                    <a href="#"><li class="menu">informações</li></a>
+                    <a href="lista-ongs.html"><li class="menu">ongs</li></a>
+                    <a href="lista-empresas.html"><li class="menu">empresas</li></a>  
+                    <a href="#"><li class="menu">configurações</li></a>
+                    <a href="index.html"><li class="menu">sair</li></a>
+                </ul>
+                <div id="botoes-nav">
+                    <img src="./assets/images/pesquisa.svg" alt="botao de pesquisar" id="btn-pesquisa">
+                    <img src="./assets/images/menu-hamburguer.svg" alt="botao de menu" id="btn-menu" onclick="toggleMenu()">
+                </div>
+            </nav>
+            <div id="texto-principal">
+                <h1>acesso à sua conta helpconnect.</h1>
+                <p>agora você tem a possibilidade de conhecer empresas que contribuem para nosso projeto e ONGs que necessitam de apoio!</p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>o que você deseja conhecer?</h2>
+                <div id="btn-redirect">
+                    <a href="lista-ongs.html">ONGs</a>
+                    <a href="lista-empresas.html">EMPRESAS</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="info-helpconnect">
+                <div id="contatos">
+                    <div id="telefone">
+                        <img src="./assets/images/telefone.svg" alt="Icon de um telefone">
+                        <p>(71) 3654-6465</p>
+                    </div>
+                    <div id="email">
+                        <img src="./assets/images/envelope.svg" alt="Icon de um envelope">
+                        <p>helpconnect@hotmail.com</p>
+                    </div>
+                    <div id="localizacao">
+                        <img src="./assets/images/localizacao.svg" alt="Icon de um ">
+                        <p>Rua da Vitória, 7</p>
+                    </div>
+                </div>
+                <div id="infos">
+                    <div id="links">
+                        <a href="index.html">sobre</a>
+                        <a href="cadastro.html">faça parte</a>
+                        <a href="login.html">login</a>
+                    </div>
+                    <img src="./assets/images/logo.svg" alt="Logo da HelpConnect" id="logo">
+                </div>
+            </div>
+            <p id="company-dev">© junior company developers</p>
+        </footer>
+      
+          <script src="botao.js"></script>
+    </body>
+</html>

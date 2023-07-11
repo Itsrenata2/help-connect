@@ -1,0 +1,176 @@
+#conheca-ongs {
+    background-color: var(--cor-destaque);
+    padding-bottom: 2rem;
+    overflow: visible;
+}
+
+#conheca-ongs h2{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-principal);
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+.cards-img {
+    display: none;
+}
+
+#card1 {
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
+}
+
+#card2 {
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
+}
+
+#card3 {
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
+}
+
+#card-info h4 {
+    font-family: var(--fonte-titulo);
+    font-size: 0.9rem;
+    color: var(--cor-destaque);
+    width: 50%;
+    margin: 0 2rem 1rem 0.5rem;
+}
+
+#btn-ajude {
+    background-color: var(--cor-destaque);
+    border: none;
+    color: var(--cor-principal);
+    font-family: var(--fonte-titulo);
+    padding: 0.25rem 1rem;
+    border-radius: 0.4rem;
+    margin: 0 0.5rem;
+}
+
+#btn-ajude:hover {
+    background-color: transparent;
+    border: 2px solid var(--cor-destaque);
+    color: var(--cor-destaque);
+}
+
+#btn-veja-mais {
+    background-color: var(--cor-principal);
+    border: none;
+    color: var(--cor-destaque);
+    font-family: var(--fonte-titulo);
+    padding: 0.4rem 3rem;
+    border-radius: 0.4rem;
+    width: 50%;
+    margin: 0 6rem;
+}
+
+#btn-veja-mais:hover {
+    background-color: var(--cor-preta);
+    color: var(--cor-principal);
+}
+
+@media screen and (min-width: 1024px) {
+    #conheca-ongs {
+        background-color: var(--cor-destaque);
+        padding-bottom: 2rem;
+        overflow: visible;
+    }
+
+    #conheca-ongs img {
+        zoom: 1.5;
+    }
+
+    .cards-img {
+        display: block;
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .cards-img img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #conheca-ongs h2{
+        font-family: var(--fonte-titulo);
+        font-size: 2rem;
+        color: var(--cor-principal);
+        text-align: center;
+        padding: 3rem 1rem 3rem 0;
+    }
+      
+    #card1 {
+        background-color: var(--cor-principal);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 1rem 1rem;
+        padding: 0;
+    }
+    
+    #card2 {
+        background-color: var(--cor-principal);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 1rem 1rem;
+        padding: 0;
+    }
+    
+    #card3 {
+        background-color: var(--cor-principal);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 1rem 1rem;
+        padding: 0;
+    }
+    
+    #card-info h4 {
+        font-family: var(--fonte-titulo);
+        font-size: 0.9rem;
+        color: var(--cor-destaque);
+        width: 50%;
+        margin: 0 2rem 1rem 0.5rem;
+    }
+    
+    #btn-ajude {
+        background-color: var(--cor-destaque);
+        border: none;
+        color: var(--cor-principal);
+        font-family: var(--fonte-titulo);
+        padding: 0.25rem 1rem;
+        border-radius: 0.4rem;
+        margin: 0 0.5rem;
+    }
+    
+    #btn-veja-mais {
+        background-color: var(--cor-principal);
+        border: none;
+        color: var(--cor-destaque);
+        font-family: var(--fonte-titulo);
+        font-size: 1.2rem;
+        padding: 0.4rem 3rem;
+        border-radius: 0.4rem;
+        width: 30%;
+        margin: 2rem 28rem;
+    }
+}

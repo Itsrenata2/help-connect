@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpConnect</title>
+    <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/cdn.jsdelivr.net_npm_swiper@10.0.3_swiper.css" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/sobre.css">
+    <link rel="stylesheet" href="./assets/ongs.css">
+    <link rel="stylesheet" href="./assets/header.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+    <link rel="stylesheet" href="./assets/colaboracao.css">
+    <link rel="stylesheet" href="./assets/botao.css">
+</head>
+<body>
+    <header>
+        <nav id="barra-nav">
+            <img src="./assets/images/logo.svg" id="logo-helpconnect">
+            <ul id="barra-nav-desktop">
+                <a href="#sobre"><li class="lista1">SOBRE</li></a>
+                <a href="cadastro.html"><li class="lista1">FAÇA PARTE</li></a>
+                <a href="login.html"><li class="lista1">LOGIN</li></a>
+            </ul>
+            <div id="botoes-nav">
+                <img src="./assets/images/pesquisa.svg" alt="botao de pesquisar" id="btn-pesquisa">
+                <img src="./assets/images/menu-hamburguer.svg" alt="botao de menu" id="btn-menu" onclick="toggleMenu()">
+            </div>
+        </nav>
+        <div id="texto-header">
+            <h1>CONECTANDO <span>PROPÓSITO</span>: ESPERANÇA ATRAVÉS DA <span>SOLIDARIEDADE</span></h1>
+            <h2>Um projeto social desenvolvido por estudantes para atenuar demandas da população em vunerabilidade socio-econômica, trazendo solidariedade e proporcionando esperança.</h2>
+            <button id="botao-conhecer-mais"><a href="login.html">conhecer mais</a></button>
+        </div>
+    </header>
+    <main>
+        <section id="sobre">
+            <div>
+                <h2>SOBRE O HELPCONNECT</h2>
+                <p>Nossa empresa conecta empresas e ONGs, promovendo a solidariedade empresarial para combater a fome e a falta de higiene básica. Junte-se a nós nessa missão de transformação social e faça parte da mudança que queremos ver no mundo.</p>    
+            </div>
+            <img src="./assets/images/imagem1.jpg" id="imagem1">
+        </section>
+        <section id="conheca-ongs">
+            <h2>CONHEÇA ALGUMAS DAS ONGs</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div id="card1" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/maos-unidas.jpg" id="ong1"> 
+                        </div>
+                        <div id="card-info">
+                            <h4>mãos solidárias</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card2" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/voluntarios.jpg" id="ong2">
+                        </div>
+                        <div id="card-info">
+                            <h4>ponte de solidariedade</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card3" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/voluntario.jpg" id="ong2">
+                        </div>
+                        <div id="card-info">
+                            <h4>esperança em ação</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card1" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/maos-unidas.jpg" id="ong1"> 
+                        </div>
+                        <div id="card-info">
+                            <h4>mãos solidárias</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card2" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/voluntarios.jpg" id="ong2">
+                        </div>
+                        <div id="card-info">
+                            <h4>ponte de solidariedade</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card3" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/voluntario.jpg" id="ong2">
+                        </div>
+                        <div id="card-info">
+                            <h4>esperança em ação</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card1" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/maos-unidas.jpg" id="ong1"> 
+                        </div>
+                        <div id="card-info">
+                            <h4>mãos solidárias</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card2" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/voluntarios.jpg" id="ong2">
+                        </div>
+                        <div id="card-info">
+                            <h4>ponte de solidariedade</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                    <div id="card3" class="swiper-slide">
+                        <div class="cards-img">
+                            <img src="./assets/images/voluntario.jpg" id="ong2">
+                        </div>
+                        <div id="card-info">
+                            <h4>esperança em ação</h4>
+                            <button id="btn-ajude">ajude</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>          
+            <button id="btn-veja-mais">VEJA MAIS</button>
+        </section>
+        <section id="colaboracao">
+            <h2>COM O QUE JÁ CONTRIBUÍMOS</h2>
+            <div id="colabs">
+                <div id="colab" class="center">
+                    <h3 id="titulo1">+ DE 14 MIL</h3>
+                    <p id="texto-colab">EMPRESAS JÁ CONTRIBUÍRAM</p>
+                </div>
+                <div id="colab" class="center">
+                    <h3 id="titulo2">+ DE 50</h3>
+                    <p id="texto-colab">ONGs ATENDIDAS</p>
+                </div>
+                <div id="colab" class="center">
+                    <h3 id="titulo3">+ DE 75 MIL</h3>
+                    <p id="texto-colab">ALIMENTOS E PRODUTOS DE HIGIENE BÁSICA ARRECADADOS</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div id="info-helpconnect">
+          <div id="contatos">
+              <div id="telefone">
+                  <img src="./assets/images/telefone.svg" alt="Icon de um telefone">
+                  <p>(71) 3654-6465</p>
+              </div>
+              <div id="email">
+                  <img src="./assets/images/envelope.svg" alt="Icon de um envelope">
+                  <p>helpconnect@hotmail.com</p>
+              </div>
+              <div id="localizacao">
+                  <img src="./assets/images/localizacao.svg" alt="Icon de um ">
+                  <p>Rua da Vitória, 7</p>
+              </div>
+          </div>
+          <div id="infos">
+              <div id="links">
+                  <a href="#">sobre</a>
+                  <a href="cadastro.html">faça parte</a>
+                  <a href="login.html">login</a>
+              </div>
+              <img src="./assets/images/logo.svg" alt="Logo da HelpConnect" id="logo">
+          </div>
+      </div>
+      <p id="company-dev">© junior company developers</p>
+  </footer>
+
+    <script src="botao.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

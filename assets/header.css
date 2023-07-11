@@ -1,0 +1,168 @@
+header {
+    background-image: url(./images/background-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgb(165, 165, 165);
+    background-repeat: no-repeat;
+    height: 15rem;
+}
+
+#logo-helpconnect {
+    width: 10%;
+    margin: 1.5rem 0 0 1.5rem;
+}
+
+#barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+#barra-nav-desktop {
+    display: none;
+}
+
+#botoes-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-pesquisa {
+    width: 40px;
+    height: 40px;
+    margin: 1.5rem 1rem 0 0;
+}
+
+#btn-menu {
+    width: 35px;
+    margin: 1.5rem 2rem 0 0;
+}
+
+#texto-header {
+    color: var(--cor-principal);
+}
+
+#texto-header h1 {
+    font-family: var(--fonte-titulo);
+    width: 60%;
+    margin: 1rem 0 0.3rem 1.5rem;
+    line-height: 120%;
+}
+
+span {
+    color: var(--cor-destaque);
+}
+
+#texto-header h2 {
+    font-family: var(--fonte-texto);
+    font-style: italic;
+    font-size: 0.7rem;
+    width: 70%;
+    margin: 0 0 0 1.5rem;
+}
+
+#botao-conhecer-mais {
+    background-color: transparent;
+    font-family: var(--fonte-texto);
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 0.3125rem;
+    padding: 0.3rem 1rem;
+    margin: 1rem 0 0 8rem;
+}
+
+#botao-conhecer-mais a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+#botao-conhecer-mais:hover {
+    background-color: var(--cor-destaque);
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 30rem;
+    }
+    
+    #logo-helpconnect {
+        width: 5%;
+        margin: 1.5rem 0 0 1.5rem;
+    }
+    
+    #barra-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    #barra-nav-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+        width: 70%;
+        margin-top: 2.5rem;
+        color: var(--cor-principal);
+    }
+
+    .nav-lista:hover {
+        color: var(--cor-destaque);
+    }
+
+    a {
+        color: var(--cor-principal);
+        text-decoration: none;
+        font-family: var(--fonte-texto);
+        font-size: 1.2rem;
+    }
+    
+    #botoes-nav {
+        display: block;
+    }
+    
+    #btn-pesquisa {
+        width: 60%;
+        margin: 2rem 3rem 0 0;
+    }
+    
+    #btn-menu {
+        display: none;
+        width: 40%;
+        margin: 1.5rem 2rem 0 0;
+    }
+    
+    #texto-header {
+        color: var(--cor-principal);
+    }
+    
+    #texto-header h1 {
+        font-family: var(--fonte-titulo);
+        font-size: 2.5rem;
+        width: 50%;
+        margin: 3rem 0 0.3rem 1.5rem;
+        line-height: 120%;
+    }
+    
+    #texto-header h2 {
+        font-family: var(--fonte-texto);
+        font-style: italic;
+        font-size: 1.5rem;
+        width: 50%;
+        margin: 0 0 0 1.5rem;
+    }
+    
+    #botao-conhecer-mais {
+        background-color: transparent;
+        font-family: var(--fonte-texto);
+        font-size: 1.5rem;
+        color: var(--cor-principal);
+        border: 1px solid var(--cor-destaque);
+        border-radius: 0.3125rem;
+        padding: 0.3rem 1rem;
+        margin: 3rem 0 0 35rem;
+    }
+}

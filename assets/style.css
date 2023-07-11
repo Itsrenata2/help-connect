@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+@import url('header.css');
+
+
+:root {
+    --cor-principal: #FFFFFF;
+    --cor-destaque: #C39E5C;
+    --cor-preta: #292929;
+    --cinza: #888888;
+
+    --fonte-titulo: 'Roboto Condensed', sans-serif;
+    --fonte-texto: 'Cabin', sans-serif;
+}
+
+body {
+    background-color: var(--cor-destaque);
+}
+
+html {
+    scroll-behavior: smooth;
+}

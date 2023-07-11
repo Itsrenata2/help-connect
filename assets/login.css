@@ -1,0 +1,176 @@
+/* Links das fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* Estilização geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin';
+}
+
+/* Estlização header */
+
+header {
+    background-color:#C39E5C;
+    color: #FFFFFF;
+    display: flex;
+    width: 100%;
+    padding: 14px 0;
+    gap: 24px;
+    align-items: center;
+    border-radius: 0px 0px 25px 0px;
+}
+
+.btn-voltar {
+    background-color: transparent;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+header p {
+    font-size: 12px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilização do main */
+
+main {
+    display: flex;
+    width: 100%;
+    margin: 90px 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+}
+
+/* Estilização do formulário */
+
+.form-login {
+    display: flex;
+    width: 90%;
+    height: 450px;
+    margin: 0 16px 16px;
+    border-radius: 5px;
+    background-color: #E3E3E3;
+}
+
+.form-login form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 40px;
+    font-size: 12px;
+}
+
+#login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#login-inputs label {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.form-login input {
+    border-bottom: 1px solid #888888;
+    padding-bottom: 6px;
+    background-color: transparent;
+}
+
+.form-login input:focus{
+    outline: none;
+    border-bottom: 1px solid #C39E5C;
+}
+
+#sobre-senha {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 40px 0;
+}
+
+.recuperar-senha {
+    text-align: end;
+    color: #292929;
+    font-weight: 400;
+}
+
+#lembrar-senha {
+    display: flex;
+    gap: 8px;
+}
+
+#lembrar-senha input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    border: 1px solid #C39E5C;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+#lembrar-senha input[type="checkbox"]:checked {
+    background-color: #C39E5C;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+form button {
+    width: 240px;
+    height: 40px;
+    background-color: #C39E5C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #dbb779;
+}
+
+#criar-conta {
+    text-align: center;
+}
+
+#criar-conta a {
+    text-decoration: none;
+    color: #888888;
+    font-weight: 500;
+}
+
+#criar-conta a:hover {
+    color: #dbb779;
+}
+
+@media only screen and (min-width: 600px) {
+    .form-login {
+        width: 70%;
+    }
+
+    .recuperar-senha, #lembrar-senha, #criar-conta, #criar-conta a {
+        font-size: 14px;
+    }
+}

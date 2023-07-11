@@ -1,0 +1,78 @@
+#colaboracao {
+    background-color: var(--cor-principal);
+    text-align: center;
+    border-radius: 10% 0 0 0;
+    padding: 2rem 0;
+}
+
+#colaboracao h2 {
+    font-family: var(--fonte-titulo);
+    text-decoration: underline;
+    color: var(--cor-destaque);
+    padding-bottom: 2rem;
+}
+
+#colab h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+    padding-bottom: 0.3rem;
+}
+
+#colab p {
+    font-family: var(--fonte-texto);
+    color: var(--cinza);
+    font-size: 0.8rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3.5rem;
+    width: 70%;
+}
+
+@media screen and (min-width: 1024px) {
+    #colaboracao {
+        background-color: var(--cor-principal);
+        text-align: center;
+        border-radius: 10% 0 0 0;
+        padding: 2rem 0 8rem 0;
+    }
+
+    #colabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    #colaboracao h2 {
+        font-family: var(--fonte-titulo);
+        font-size: 2rem;
+        text-decoration: underline;
+        color: var(--cor-destaque);
+        padding-bottom: 2rem;
+    }
+
+    #colab {
+        justify-content: center;
+    }
+    
+    #colab h3 {
+        font-family: var(--fonte-titulo);
+        font-size: 1.5rem;
+        color: var(--cor-destaque);
+        padding-bottom: 0.3rem;
+        padding-right: 0rem;
+    }
+
+    #titulo1 {
+        padding-left: 2.5rem;
+    }
+
+    #titulo2 {
+        padding-left: 4.5rem;
+    }
+    
+    #colab p {
+        font-size: 1rem;
+        width: 80%;
+        line-height: 120%;
+    }
+}
