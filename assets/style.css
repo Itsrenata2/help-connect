@@ -19,3 +19,26 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+#mudar-fontsize {
+    display: flex;
+    flex-direction: column;
+    right: 35px;
+    position: absolute;
+    top: 120px;
+    gap: 12px;
+}
+
+#mudar-fontsize button {
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mudar-fontsize button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal)
+}
