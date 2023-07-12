@@ -140,3 +140,16 @@ function verificarUsuario(event) {
     window.location.href = "pag-usuario.html";
   }
 }
+
+var text = document.getElementById('texto-header');
+var btnDec = document.getElementById('diminuir-fontsize');
+var btnInc = document.getElementById('aumentar-fontsize');
+
+var size = 16; //Default
+
+btnDec.addEventListener('click', function() {
+  text.style.fontSize = size-- + 'px';
+});
+btnInc.addEventListener('click', function() {
+  text.style.fontSize = size++ + 'px';
+});
